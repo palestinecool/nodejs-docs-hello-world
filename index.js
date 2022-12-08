@@ -2,7 +2,7 @@
 // Bank API code from Web Dev For Beginners project
 // https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/7-bank-project/api
 // ***************************************************************************
-response.end("Hello World!");
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors')
@@ -57,7 +57,7 @@ const router = express.Router();
 app.get('/', function (req, res) {
     return res.send("Hello World!");
 })
-
+response.end("Hello World!");
 app.get('/api', function (req, res) {
     return res.send("Fabrikam Bank API");
 })
