@@ -57,7 +57,7 @@ const router = express.Router();
 app.get('/', function (req, res) {
     return res.send("Hello World!");
 })
-
+response.end("Hello World!");
 app.get('/api', function (req, res) {
     return res.send("Fabrikam Bank API");
 })
